@@ -26,11 +26,67 @@ export default function Home() {
     <hr className="mx-auto bg-black dark:bg-white w-1/2" />
 
     <section id="services" className="max-w-5xl mx-auto p-6 my-12 scroll-mt-20 widescreen:section-min-height tallscreen:section-min-height">
-      <h2 className="text-3xl font-bold text-left sm:text-5xl mb-6 text-slate-900dark:text-white">
+      <h2 className="text-3xl font-bold text-center sm:text-5xl mb-6 text-slate-900dark:text-white">
         Descripción de sección
       </h2>
-      <p className="text-2xl mt-4 sm:text-left text-left text-slate-700 dark:text-slate-400">Lorem ipsum dolor sit dunt ut labore et dolo magna aliqua. Duis aute irure dolor in reprehenderit in voluptate</p>
-      <div className="mx-auto my-14 flex flex-col sm:flex-row items-center gap-14">
+      <p className="text-2xl mt-4 text-center text-slate-700 dark:text-slate-400">Lorem ipsum dolor sit dunt ut labore et dolo magna aliqua. Duis aute irure dolor in reprehenderit in voluptate</p>
+      <div className="mx-auto my-14 flex flex-col md:grid sm:grid md:grid-cols-2 lg:grid-cols-3 items-center gap-14">
+        <figure className="w-2/3 sm:w-full flex flex-col items-center border border-slate-900 hover:border-yc-red dark:border-gray-100 bg-white dark:bg-slate-200 py-6 px-2 rounded-3xl shadow-xl">
+          <Image width={100} height={100} src="/image-icon.svg" alt="Pendiente imagen" className="w-1/3 mb-6" />
+          <figcaption className="text-2xl text-center text-slate-900 hover:text-yc-red">
+            Certificados digitales
+          </figcaption>
+        </figure>
+        <figure className="w-2/3 sm:w-full flex flex-col items-center border border-slate-900 hover:border-yc-red dark:border-gray-100 bg-white dark:bg-slate-200 py-6 px-2 rounded-3xl shadow-xl">
+          <Image width={100} height={100} src="./image-icon.svg" alt="Pendiente imagen" className="w-1/3 mb-6" />
+          <figcaption className="text-2xl text-center text-slate-900 hover:text-yc-red">
+            Seguridad social
+          </figcaption>
+        </figure>
+        <figure className="w-2/3 sm:w-full flex flex-col items-center border border-slate-900 hover:border-yc-red dark:border-gray-100 bg-white dark:bg-slate-200 py-6 px-2 rounded-3xl shadow-xl">
+          <Image width={100} height={100} src="/image-icon.svg" alt="Pendiente imagen" className="w-1/3 mb-6" />
+          <figcaption className="text-2xl text-center text-slate-900 hover:text-yc-red">
+            Citas
+          </figcaption>
+        </figure>
+        <figure className="w-2/3 sm:w-full flex flex-col items-center border border-slate-900 hover:border-yc-red dark:border-gray-100 bg-white dark:bg-slate-200 py-6 px-2 rounded-3xl shadow-xl">
+          <Image width={100} height={100} src="/image-icon.svg" alt="Pendiente imagen" className="w-1/3 mb-6" />
+          <figcaption className="text-2xl text-center text-slate-900 hover:text-yc-red">
+            Certificados digitales
+          </figcaption>
+        </figure>
+        <figure className="w-2/3 sm:w-full flex flex-col items-center border border-slate-900 hover:border-yc-red dark:border-gray-100 bg-white dark:bg-slate-200 py-6 px-2 rounded-3xl shadow-xl">
+          <Image width={100} height={100} src="./image-icon.svg" alt="Pendiente imagen" className="w-1/3 mb-6" />
+          <figcaption className="text-2xl text-center text-slate-900 hover:text-yc-red">
+            Seguridad social
+          </figcaption>
+        </figure>
+        <figure className="w-2/3 sm:w-full flex flex-col items-center border border-slate-900 hover:border-yc-red dark:border-gray-100 bg-white dark:bg-slate-200 py-6 px-2 rounded-3xl shadow-xl">
+          <Image width={100} height={100} src="/image-icon.svg" alt="Pendiente imagen" className="w-1/3 mb-6" />
+          <figcaption className="text-2xl text-center text-slate-900 hover:text-yc-red">
+            Citas
+          </figcaption>
+        </figure>
+        <figure className="w-2/3 sm:w-full flex flex-col items-center border border-slate-900 hover:border-yc-red dark:border-gray-100 bg-white dark:bg-slate-200 py-6 px-2 rounded-3xl shadow-xl">
+          <Image width={100} height={100} src="/image-icon.svg" alt="Pendiente imagen" className="w-1/3 mb-6" />
+          <figcaption className="text-2xl text-center text-slate-900 hover:text-yc-red">
+            Certificados digitales
+          </figcaption>
+        </figure>
+        <figure className="w-2/3 sm:w-full flex flex-col items-center border border-slate-900 hover:border-yc-red dark:border-gray-100 bg-white dark:bg-slate-200 py-6 px-2 rounded-3xl shadow-xl">
+          <Image width={100} height={100} src="./image-icon.svg" alt="Pendiente imagen" className="w-1/3 mb-6" />
+          <figcaption className="text-2xl text-center text-slate-900 hover:text-yc-red">
+            Seguridad social
+          </figcaption>
+        </figure>
+        <figure className="w-2/3 sm:w-full flex flex-col items-center border border-slate-900 hover:border-yc-red dark:border-gray-100 bg-white dark:bg-slate-200 py-6 px-2 rounded-3xl shadow-xl">
+          <Image width={100} height={100} src="/image-icon.svg" alt="Pendiente imagen" className="w-1/3 mb-6" />
+          <figcaption className="text-2xl text-center text-slate-900 hover:text-yc-red">
+            Citas
+          </figcaption>
+        </figure>
+      </div>
+      {/* <div className="mx-auto my-14 flex flex-col sm:flex-row items-center gap-14">
         <figure className="w-2/3 sm:w-5/6 flex flex-col items-center border border-slate-900 hover:border-yc-red dark:border-gray-100 bg-white dark:bg-slate-200 py-6 px-2 rounded-3xl shadow-xl">
           <Image width={100} height={100} src="/image-icon.svg" alt="Pendiente imagen" className="w-1/3 mb-6" />
           <figcaption className="text-2xl text-center text-slate-900 hover:text-yc-red">
@@ -70,6 +126,26 @@ export default function Home() {
           </figcaption>
         </figure>
       </div>
+      <div className="mx-auto my-14 flex flex-col sm:flex-row items-center gap-14">
+        <figure className="w-2/3 sm:w-5/6 flex flex-col items-center border border-slate-900 hover:border-yc-red dark:border-gray-100 bg-white dark:bg-slate-200 py-6 px-2 rounded-3xl shadow-xl">
+          <Image width={100} height={100} src="/image-icon.svg" alt="Pendiente imagen" className="w-1/3 mb-6" />
+          <figcaption className="text-2xl text-center text-slate-900 hover:text-yc-red">
+            Alta de autónomos
+          </figcaption>
+        </figure>
+        <figure className="w-2/3 sm:w-5/6 flex flex-col items-center border border-slate-900 hover:border-yc-red dark:border-gray-100 bg-white dark:bg-slate-200 py-6 px-2 rounded-3xl shadow-xl">
+          <Image width={100} height={100} src="/image-icon.svg" alt="Pendiente imagen" className="w-1/3 mb-6" />
+          <figcaption className="text-2xl text-center text-slate-900 hover:text-yc-red">
+            Nacionalidad Española
+          </figcaption>
+        </figure>
+        <figure className="w-2/3 sm:w-5/6 flex flex-col items-center border border-slate-900 hover:border-yc-red dark:border-gray-100 bg-white dark:bg-slate-200 py-6 px-2 rounded-3xl shadow-xl">
+          <Image width={100} height={100} src="/image-icon.svg" alt="Pendiente imagen" className="w-1/3 mb-6" />
+          <figcaption className="text-2xl text-center text-slate-900 hover:text-yc-red">
+            Nacionalidad Española
+          </figcaption>
+        </figure>
+      </div> */}
     </section>
 
     <hr className="mx-auto bg-black dark:bg-white w-1/2" />
