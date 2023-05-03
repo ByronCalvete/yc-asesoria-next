@@ -112,8 +112,8 @@ export default function Home() {
             Una descripción que comunique lo que hacemos y cómo los beneficaremos. Necesitamos transmitir confianza y experiencia en lo que hacemos.
           </p>
           <div className="mt-8 flex gap-4">
-            <Link href="/asesoria-gratuita" className="bg-yc-red text-center self-center px-3 py-4 text-md sm:text-xl rounded-xl hover:opacity-90 text-white w-1/2 border border-black shadow-xl">Asesoría Gratuita</Link>
-            <button href="#link4" className="bg-slate-200 dark:bg-slate-50 text-yc-red py-4 px-3 text-md sm:text-xl rounded-lg hover:opacity-80 w-1/2 border border-yc-red shadow-xl">Testimonios</button>
+            <button className="bg-yc-red px-3 py-4 text-md md:text-xl rounded-lg hover:opacity-90 text-white w-1/2 border border-black shadow-xl"><Link href='/asesoria-gratuita'>Asesoría Gratuita</Link></button>
+            <button className="bg-slate-200 dark:bg-slate-50 text-yc-red py-2 px-3 text-md sm:text-xl rounded-lg hover:opacity-80 w-1/2 border border-yc-red shadow-xl"><Link href="/">Testimonios</Link></button>
           </div>
         </article>
         <div className="w-1/2 h-60 sm:h-80 grid place-content-center border-solid border-4 border-black dark:border-white rounded-xl bg-slate-200">
@@ -146,7 +146,7 @@ export default function Home() {
 
     <hr className="mx-auto bg-black dark:bg-white w-1/2" />
 
-    <section id="testimonials" className="max-w-5xl mx-auto p-6 my-12 scrooll-mt-20 sidescreen:section-min-height tallscreen:section-min-height">
+    <section id="testimonials" className="max-w-5xl mx-auto p-6 my-12 scroll-mt-20 widescreen:section-min-height tallscreen:section-min-height">
       <h2 className="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white">
         Testimonios
       </h2>
