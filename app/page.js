@@ -1,4 +1,6 @@
 import Image from 'next/image'
+import Link from 'next/link'
+
 import Service from './components/Service'
 import Testimony from './components/Testimony'
 
@@ -7,11 +9,12 @@ const data = {
   services: [
     {
       id: 1,
-      name: 'Certificados digitales',
+      name: 'Certificado digital',
       img: '/image-icon.svg',
       imgDescription: 'Pendiente descripción',
       width: 100,
       height: 100,
+      link: '/certificado-digital',
     },
     {
       id: 2,
@@ -20,6 +23,7 @@ const data = {
       imgDescription: 'Pendiente descripción',
       width: 100,
       height: 100,
+      link: '/seguridad-social',
     },
     {
       id: 3,
@@ -28,6 +32,7 @@ const data = {
       imgDescription: 'Pendiente descripción',
       width: 100,
       height: 100,
+      link: '/citas',
     },
     {
       id: 4,
@@ -36,6 +41,7 @@ const data = {
       imgDescription: 'Pendiente descripción',
       width: 100,
       height: 100,
+      link: '/arraigos',
     },
     {
       id: 5,
@@ -44,6 +50,7 @@ const data = {
       imgDescription: 'Pendiente descripción',
       width: 100,
       height: 100,
+      link: '/residencias',
     },
     {
       id: 6,
@@ -52,6 +59,7 @@ const data = {
       imgDescription: 'Pendiente descripción',
       width: 100,
       height: 100,
+      link: '/renovaciones',
     },
     {
       id: 7,
@@ -60,6 +68,7 @@ const data = {
       imgDescription: 'Pendiente descripción',
       width: 100,
       height: 100,
+      link: '/alta-autonomo',
     },
     {
       id: 8,
@@ -68,6 +77,7 @@ const data = {
       imgDescription: 'Pendiente descripción',
       width: 100,
       height: 100,
+      link: '/nacionalidad',
     }
   ],
   testimonials: [
@@ -102,8 +112,8 @@ export default function Home() {
             Una descripción que comunique lo que hacemos y cómo los beneficaremos. Necesitamos transmitir confianza y experiencia en lo que hacemos.
           </p>
           <div className="mt-8 flex gap-4">
-            <button href="#link4" className="bg-yc-red py-2 px-3 text-lg rounded-xl hover:opacity-90 text-white w-1/2">Asesoría Gratuita</button>
-            <button href="#link4" className="bg-slate-200 dark:bg-slate-50 text-yc-red py-4 px-3 text-xl rounded-lg hover:opacity-80 w-1/2 border border-yc-red">Testimonios</button>
+            <Link href="/asesoria-gratuita" className="bg-yc-red text-center self-center px-3 py-4 text-md sm:text-xl rounded-xl hover:opacity-90 text-white w-1/2 border border-black shadow-xl">Asesoría Gratuita</Link>
+            <button href="#link4" className="bg-slate-200 dark:bg-slate-50 text-yc-red py-4 px-3 text-md sm:text-xl rounded-lg hover:opacity-80 w-1/2 border border-yc-red shadow-xl">Testimonios</button>
           </div>
         </article>
         <div className="w-1/2 h-60 sm:h-80 grid place-content-center border-solid border-4 border-black dark:border-white rounded-xl bg-slate-200">
@@ -119,7 +129,7 @@ export default function Home() {
         Descripción de sección
       </h2>
       <p className="text-2xl mt-4 text-center text-slate-700 dark:text-slate-400">Lorem ipsum dolor sit dunt ut labore et dolo magna aliqua. Duis aute irure dolor in reprehenderit in voluptate</p>
-      <div className="mx-auto my-14 flex flex-col md:grid sm:grid md:grid-cols-2 lg:grid-cols-3 items-center gap-14">
+      <div className="my-14 grid md:grid-cols-2 lg:grid-cols-3 items-center gap-14">
         {data.services.map(service => (
           <Service
             key={service.id}
@@ -128,6 +138,7 @@ export default function Home() {
             name={service.name}
             width={service.width}
             height={service.height}
+            link={service.link}
           />
         ))}
       </div>

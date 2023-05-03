@@ -28,7 +28,7 @@ export default function Header() {
             <Link href="/about" className="hover:opacity-90">Link 1</Link>
             <Link href="#link2" className="hover:opacity-90">Link 2</Link>
             <Link href="#link3" className="hover:opacity-90">Link 3</Link>
-            <button className="bg-yc-red dark:bg-slate-50 text-white dark:text-yc-red py-2 px-3 rounded-lg hover:opacity-90">Asesoría Gratuita</button>
+            <Link href="/asesoria-gratuita" className="bg-yc-red dark:bg-slate-50 text-white dark:text-yc-red py-3 px-3 rounded-lg hover:opacity-90 border border-black shadow-xl">Asesoría Gratuita</Link>
           </nav>
         </div>
       </section>
