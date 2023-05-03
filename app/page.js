@@ -1,4 +1,93 @@
 import Image from 'next/image'
+import Service from './components/Service'
+import Testimony from './components/Testimony'
+
+// hardcoded data for testing
+const data = {
+  services: [
+    {
+      id: 1,
+      name: 'Certificados digitales',
+      img: '/image-icon.svg',
+      imgDescription: 'Pendiente descripción',
+      width: 100,
+      height: 100,
+    },
+    {
+      id: 2,
+      name: 'Seguridad Social',
+      img: '/image-icon.svg',
+      imgDescription: 'Pendiente descripción',
+      width: 100,
+      height: 100,
+    },
+    {
+      id: 3,
+      name: 'Citas',
+      img: '/image-icon.svg',
+      imgDescription: 'Pendiente descripción',
+      width: 100,
+      height: 100,
+    },
+    {
+      id: 4,
+      name: 'Arraigos',
+      img: '/image-icon.svg',
+      imgDescription: 'Pendiente descripción',
+      width: 100,
+      height: 100,
+    },
+    {
+      id: 5,
+      name: 'Residencias',
+      img: '/image-icon.svg',
+      imgDescription: 'Pendiente descripción',
+      width: 100,
+      height: 100,
+    },
+    {
+      id: 6,
+      name: 'Renovaciones',
+      img: '/image-icon.svg',
+      imgDescription: 'Pendiente descripción',
+      width: 100,
+      height: 100,
+    },
+    {
+      id: 7,
+      name: 'Alta de autónomos',
+      img: '/image-icon.svg',
+      imgDescription: 'Pendiente descripción',
+      width: 100,
+      height: 100,
+    },
+    {
+      id: 8,
+      name: 'Nacionalidad Española',
+      img: '/image-icon.svg',
+      imgDescription: 'Pendiente descripción',
+      width: 100,
+      height: 100,
+    }
+  ],
+  testimonials: [
+    {
+      id: 1,
+      content: 'Acme has always been there for me. Their Explorer rocket arrived in a wooden crate as expected. Life-long customer! A++ shopping experience.',
+      author: 'Wile E. Coyote, Genius'
+    },
+    {
+      id: 2,
+      content: 'Acme has always been there for me. Their Explorer rocket arrived in a wooden crate as expected. Life-long customer! A++ shopping experience.',
+      author: 'Wile E. Coyote, Genius'
+    },
+    {
+      id: 2,
+      content: 'Acme has always been there for me. Their Explorer rocket arrived in a wooden crate as expected. Life-long customer! A++ shopping experience.',
+      author: 'Wile E. Coyote, Genius'
+    },
+  ]
+}
 
 export default function Home() {
   return (
@@ -31,121 +120,17 @@ export default function Home() {
       </h2>
       <p className="text-2xl mt-4 text-center text-slate-700 dark:text-slate-400">Lorem ipsum dolor sit dunt ut labore et dolo magna aliqua. Duis aute irure dolor in reprehenderit in voluptate</p>
       <div className="mx-auto my-14 flex flex-col md:grid sm:grid md:grid-cols-2 lg:grid-cols-3 items-center gap-14">
-        <figure className="w-2/3 sm:w-full flex flex-col items-center border border-slate-900 hover:border-yc-red dark:border-gray-100 bg-white dark:bg-slate-200 py-6 px-2 rounded-3xl shadow-xl">
-          <Image width={100} height={100} src="/image-icon.svg" alt="Pendiente imagen" className="w-1/3 mb-6" />
-          <figcaption className="text-2xl text-center text-slate-900 hover:text-yc-red">
-            Certificados digitales
-          </figcaption>
-        </figure>
-        <figure className="w-2/3 sm:w-full flex flex-col items-center border border-slate-900 hover:border-yc-red dark:border-gray-100 bg-white dark:bg-slate-200 py-6 px-2 rounded-3xl shadow-xl">
-          <Image width={100} height={100} src="./image-icon.svg" alt="Pendiente imagen" className="w-1/3 mb-6" />
-          <figcaption className="text-2xl text-center text-slate-900 hover:text-yc-red">
-            Seguridad social
-          </figcaption>
-        </figure>
-        <figure className="w-2/3 sm:w-full flex flex-col items-center border border-slate-900 hover:border-yc-red dark:border-gray-100 bg-white dark:bg-slate-200 py-6 px-2 rounded-3xl shadow-xl">
-          <Image width={100} height={100} src="/image-icon.svg" alt="Pendiente imagen" className="w-1/3 mb-6" />
-          <figcaption className="text-2xl text-center text-slate-900 hover:text-yc-red">
-            Citas
-          </figcaption>
-        </figure>
-        <figure className="w-2/3 sm:w-full flex flex-col items-center border border-slate-900 hover:border-yc-red dark:border-gray-100 bg-white dark:bg-slate-200 py-6 px-2 rounded-3xl shadow-xl">
-          <Image width={100} height={100} src="/image-icon.svg" alt="Pendiente imagen" className="w-1/3 mb-6" />
-          <figcaption className="text-2xl text-center text-slate-900 hover:text-yc-red">
-            Certificados digitales
-          </figcaption>
-        </figure>
-        <figure className="w-2/3 sm:w-full flex flex-col items-center border border-slate-900 hover:border-yc-red dark:border-gray-100 bg-white dark:bg-slate-200 py-6 px-2 rounded-3xl shadow-xl">
-          <Image width={100} height={100} src="./image-icon.svg" alt="Pendiente imagen" className="w-1/3 mb-6" />
-          <figcaption className="text-2xl text-center text-slate-900 hover:text-yc-red">
-            Seguridad social
-          </figcaption>
-        </figure>
-        <figure className="w-2/3 sm:w-full flex flex-col items-center border border-slate-900 hover:border-yc-red dark:border-gray-100 bg-white dark:bg-slate-200 py-6 px-2 rounded-3xl shadow-xl">
-          <Image width={100} height={100} src="/image-icon.svg" alt="Pendiente imagen" className="w-1/3 mb-6" />
-          <figcaption className="text-2xl text-center text-slate-900 hover:text-yc-red">
-            Citas
-          </figcaption>
-        </figure>
-        <figure className="w-2/3 sm:w-full flex flex-col items-center border border-slate-900 hover:border-yc-red dark:border-gray-100 bg-white dark:bg-slate-200 py-6 px-2 rounded-3xl shadow-xl">
-          <Image width={100} height={100} src="/image-icon.svg" alt="Pendiente imagen" className="w-1/3 mb-6" />
-          <figcaption className="text-2xl text-center text-slate-900 hover:text-yc-red">
-            Certificados digitales
-          </figcaption>
-        </figure>
-        <figure className="w-2/3 sm:w-full flex flex-col items-center border border-slate-900 hover:border-yc-red dark:border-gray-100 bg-white dark:bg-slate-200 py-6 px-2 rounded-3xl shadow-xl">
-          <Image width={100} height={100} src="./image-icon.svg" alt="Pendiente imagen" className="w-1/3 mb-6" />
-          <figcaption className="text-2xl text-center text-slate-900 hover:text-yc-red">
-            Seguridad social
-          </figcaption>
-        </figure>
-        <figure className="w-2/3 sm:w-full flex flex-col items-center border border-slate-900 hover:border-yc-red dark:border-gray-100 bg-white dark:bg-slate-200 py-6 px-2 rounded-3xl shadow-xl">
-          <Image width={100} height={100} src="/image-icon.svg" alt="Pendiente imagen" className="w-1/3 mb-6" />
-          <figcaption className="text-2xl text-center text-slate-900 hover:text-yc-red">
-            Citas
-          </figcaption>
-        </figure>
+        {data.services.map(service => (
+          <Service
+            key={service.id}
+            srcImage={service.img}
+            altImage={service.imgDescription}
+            name={service.name}
+            width={service.width}
+            height={service.height}
+          />
+        ))}
       </div>
-      {/* <div className="mx-auto my-14 flex flex-col sm:flex-row items-center gap-14">
-        <figure className="w-2/3 sm:w-5/6 flex flex-col items-center border border-slate-900 hover:border-yc-red dark:border-gray-100 bg-white dark:bg-slate-200 py-6 px-2 rounded-3xl shadow-xl">
-          <Image width={100} height={100} src="/image-icon.svg" alt="Pendiente imagen" className="w-1/3 mb-6" />
-          <figcaption className="text-2xl text-center text-slate-900 hover:text-yc-red">
-            Certificados digitales
-          </figcaption>
-        </figure>
-        <figure className="w-2/3 sm:w-5/6 flex flex-col items-center border border-slate-900 hover:border-yc-red dark:border-gray-100 bg-white dark:bg-slate-200 py-6 px-2 rounded-3xl shadow-xl">
-          <Image width={100} height={100} src="./image-icon.svg" alt="Pendiente imagen" className="w-1/3 mb-6" />
-          <figcaption className="text-2xl text-center text-slate-900 hover:text-yc-red">
-            Seguridad social
-          </figcaption>
-        </figure>
-        <figure className="w-2/3 sm:w-5/6 flex flex-col items-center border border-slate-900 hover:border-yc-red dark:border-gray-100 bg-white dark:bg-slate-200 py-6 px-2 rounded-3xl shadow-xl">
-          <Image width={100} height={100} src="/image-icon.svg" alt="Pendiente imagen" className="w-1/3 mb-6" />
-          <figcaption className="text-2xl text-center text-slate-900 hover:text-yc-red">
-            Citas
-          </figcaption>
-        </figure>
-      </div>
-      <div className="mx-auto my-14 flex flex-col sm:flex-row items-center gap-14">
-        <figure className="w-2/3 sm:w-5/6 flex flex-col items-center border border-slate-900 hover:border-yc-red dark:border-gray-100 bg-white dark:bg-slate-200 py-6 px-2 rounded-3xl shadow-xl">
-          <Image width={100} height={100} src="/image-icon.svg" alt="Pendiente imagen" className="w-1/3 mb-6" />
-          <figcaption className="text-2xl text-center text-slate-900 hover:text-yc-red">
-            Arraigos
-          </figcaption>
-        </figure>
-        <figure className="w-2/3 sm:w-5/6 flex flex-col items-center border border-slate-900 hover:border-yc-red dark:border-gray-100 bg-white dark:bg-slate-200 py-6 px-2 rounded-3xl shadow-xl">
-          <Image width={100} height={100} src="/image-icon.svg" alt="Pendiente imagen" className="w-1/3 mb-6" />
-          <figcaption className="text-2xl text-center text-slate-900 hover:text-yc-red">
-            Residencias
-          </figcaption>
-        </figure>
-        <figure className="w-2/3 sm:w-5/6 flex flex-col items-center border border-slate-900 hover:border-yc-red dark:border-gray-100 bg-white dark:bg-slate-200 py-6 px-2 rounded-3xl shadow-xl">
-          <Image width={100} height={100} src="/image-icon.svg" alt="Pendiente imagen" className="w-1/3 mb-6" />
-          <figcaption className="text-2xl text-center text-slate-900 hover:text-yc-red">
-            Renovaciones
-          </figcaption>
-        </figure>
-      </div>
-      <div className="mx-auto my-14 flex flex-col sm:flex-row items-center gap-14">
-        <figure className="w-2/3 sm:w-5/6 flex flex-col items-center border border-slate-900 hover:border-yc-red dark:border-gray-100 bg-white dark:bg-slate-200 py-6 px-2 rounded-3xl shadow-xl">
-          <Image width={100} height={100} src="/image-icon.svg" alt="Pendiente imagen" className="w-1/3 mb-6" />
-          <figcaption className="text-2xl text-center text-slate-900 hover:text-yc-red">
-            Alta de autónomos
-          </figcaption>
-        </figure>
-        <figure className="w-2/3 sm:w-5/6 flex flex-col items-center border border-slate-900 hover:border-yc-red dark:border-gray-100 bg-white dark:bg-slate-200 py-6 px-2 rounded-3xl shadow-xl">
-          <Image width={100} height={100} src="/image-icon.svg" alt="Pendiente imagen" className="w-1/3 mb-6" />
-          <figcaption className="text-2xl text-center text-slate-900 hover:text-yc-red">
-            Nacionalidad Española
-          </figcaption>
-        </figure>
-        <figure className="w-2/3 sm:w-5/6 flex flex-col items-center border border-slate-900 hover:border-yc-red dark:border-gray-100 bg-white dark:bg-slate-200 py-6 px-2 rounded-3xl shadow-xl">
-          <Image width={100} height={100} src="/image-icon.svg" alt="Pendiente imagen" className="w-1/3 mb-6" />
-          <figcaption className="text-2xl text-center text-slate-900 hover:text-yc-red">
-            Nacionalidad Española
-          </figcaption>
-        </figure>
-      </div> */}
     </section>
 
     <hr className="mx-auto bg-black dark:bg-white w-1/2" />
@@ -154,54 +139,13 @@ export default function Home() {
       <h2 className="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white">
         Testimonios
       </h2>
-      <figure className="my-12">
-        <blockquote className="bg-yc-red dark:bg-[#222424] pl-14 pr-8 py-12 rounded-3xl relative">
-          <p
-            className="text-2xl sm:text-3xl text-left mt-2 text-white dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-white after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2"
-          >
-            Acme has always been there for me. Their Explorer rocket arrived
-            in a wooden crate as expected. Life-long customer! A++ shopping
-            experience.
-          </p>
-        </blockquote>
-        <figcaption
-          className="italic text-xl sm:text-2xl text-right mt-2 text-slate-500 dark:text-slate-400"
-        >
-          &#8212; Wile E. Coyote, Genius
-        </figcaption>
-      </figure>
-      <figure className="my-12">
-        <blockquote className="bg-yc-red dark:bg-[#222424] pl-14 pr-8 py-12 rounded-3xl relative">
-          <p
-            className="text-2xl sm:text-3xl text-left mt-2 text-white dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-white after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2"
-          >
-            Acme has always been there for me. Their Explorer rocket arrived
-            in a wooden crate as expected. Life-long customer! A++ shopping
-            experience.
-          </p>
-        </blockquote>
-        <figcaption
-          className="italic text-xl sm:text-2xl text-right mt-2 text-slate-500 dark:text-slate-400"
-        >
-          &#8212; Wile E. Coyote, Genius
-        </figcaption>
-      </figure>
-      <figure className="my-12">
-        <blockquote className="bg-yc-red dark:bg-[#222424] pl-14 pr-8 py-12 rounded-3xl relative">
-          <p
-            className="text-2xl sm:text-3xl text-left mt-2 text-white dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-white after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2"
-          >
-            Acme has always been there for me. Their Explorer rocket arrived
-            in a wooden crate as expected. Life-long customer! A++ shopping
-            experience.
-          </p>
-        </blockquote>
-        <figcaption
-          className="italic text-xl sm:text-2xl text-right mt-2 text-slate-500 dark:text-slate-400"
-        >
-          &#8212; Wile E. Coyote, Genius
-        </figcaption>
-      </figure>
+      {data.testimonials.map(testimony => (
+        <Testimony
+          key={testimony.id}
+          content={testimony.content}
+          author={testimony.author}
+        />
+      ))}
     </section>
     </main>
   )
