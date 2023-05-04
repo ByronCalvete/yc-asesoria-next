@@ -28,7 +28,7 @@ export default function Header() {
             {/* <Link href="/citas" className="hover:opacity-90">Citas</Link>
             <Link href="/residencias" className="hover:opacity-90">Residencias</Link>
             <Link href="/nacionalidad" className="hover:opacity-90">Nacionalidad</Link> */}
-            <Link href="/asesoria-gratuita" className="bg-yc-red dark:bg-slate-50 text-white dark:text-yc-red py-3 px-3 rounded-lg hover:opacity-90 border border-black shadow-xl">Asesoría Gratuita</Link>
+            <Link href="/asesoria-gratuita" className="bg-yc-red dark:bg-slate-50 text-white dark:text-yc-red py-3 px-3 rounded-lg hover:opacity-90 border border-black shadow-md hover:shadow-xl">Asesoría Gratuita</Link>
           </nav>
         </div>
       </section>
