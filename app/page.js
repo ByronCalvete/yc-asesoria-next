@@ -103,61 +103,61 @@ export default function Home() {
   return (
     <main>
       <div className="bg-hero dark:bg-none dark:bg-[#363939]">
-      <section id="hero" className="max-w-5xl mx-auto flex flex-col-reverse justify-center sm:flex-row p-6 items-center gap-8 sm:gap-10 mb-12 scroll-mt-40 widescreen:section-min-height tallscreen:section-min-height">
-        <article className="sm:w-1/2">
-          <h2 className="max-w-md text-4xl font-bold text-center sm:text-5xl sm:text-left text-slate-900 dark:text-white">
-            Asesoría Latina
-          </h2>
-          <p className="max-w-md text-2xl mt-4 text-center sm:text-left text-slate-700 dark:text-slate-400">
-            Una descripción que comunique lo que hacemos y cómo los beneficaremos. Necesitamos transmitir confianza y experiencia en lo que hacemos.
-          </p>
-          <div className="mt-8 flex gap-4">
-            <button className="bg-yc-red px-3 py-4 text-md md:text-xl rounded-lg hover:opacity-90 text-white w-1/2 border border-black shadow-xl"><Link href='/asesoria-gratuita'>Asesoría Gratuita</Link></button>
-            <button className="bg-slate-200 dark:bg-slate-50 text-yc-red py-2 px-3 text-md sm:text-xl rounded-lg hover:opacity-80 w-1/2 border border-yc-red shadow-xl"><Link href="/">Testimonios</Link></button>
+        <section id="hero" className="max-w-5xl mx-auto flex flex-col-reverse justify-center sm:flex-row p-6 items-center gap-8 sm:gap-10 mb-12 scroll-mt-40 widescreen:section-min-height tallscreen:section-min-height">
+          <article className="sm:w-1/2">
+            <h2 className="max-w-md text-4xl font-bold text-center sm:text-5xl sm:text-left text-slate-900 dark:text-white">
+              Asesoría Latina
+            </h2>
+            <p className="max-w-md text-2xl mt-4 text-center sm:text-left text-slate-700 dark:text-slate-400">
+              Una descripción que comunique lo que hacemos y cómo los beneficaremos. Necesitamos transmitir confianza y experiencia en lo que hacemos.
+            </p>
+            <div className="mt-8 flex gap-4">
+              <button className="bg-yc-red px-3 py-4 text-md md:text-xl rounded-lg hover:opacity-90 text-white w-1/2 border border-black shadow-xl"><Link href='/asesoria-gratuita'>Asesoría Gratuita</Link></button>
+              <button className="bg-slate-200 dark:bg-slate-50 text-yc-red py-2 px-3 text-md sm:text-xl rounded-lg hover:opacity-80 w-1/2 border border-yc-red shadow-xl"><Link href="/">Testimonios</Link></button>
+            </div>
+          </article>
+          <div className="w-1/2 h-60 sm:h-80 grid place-content-center border-solid border-4 border-black dark:border-white rounded-xl bg-slate-200">
+            <Image width={150} height={150} src="/image-icon.svg" alt="Pendiente imagen" />
           </div>
-        </article>
-        <div className="w-1/2 h-60 sm:h-80 grid place-content-center border-solid border-4 border-black dark:border-white rounded-xl bg-slate-200">
-          <Image width={150} height={150} src="/image-icon.svg" alt="Pendiente imagen" />
+        </section>
+      </div>
+
+      <hr className="mx-auto bg-black dark:bg-white w-1/2" />
+
+      <section id="services" className="max-w-5xl mx-auto p-6 my-6 sm:my-12 scroll-mt-20 widescreen:section-min-height tallscreen:section-min-height">
+        <h2 className="text-3xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white">
+          Descripción de sección
+        </h2>
+        <p className="text-2xl mt-4 text-center text-slate-700 dark:text-slate-400">Lorem ipsum dolor sit dunt ut labore et dolo magna aliqua. Duis aute irure dolor in reprehenderit in voluptate</p>
+        <div className="mt-14 grid md:grid-cols-2 lg:grid-cols-3 items-center gap-14">
+          {data.services.map(service => (
+            <Service
+              key={service.id}
+              srcImage={service.img}
+              altImage={service.imgDescription}
+              name={service.name}
+              width={service.width}
+              height={service.height}
+              link={service.link}
+            />
+          ))}
         </div>
       </section>
-    </div>
 
-    <hr className="mx-auto bg-black dark:bg-white w-1/2" />
+      <hr className="mx-auto bg-black dark:bg-white w-1/2" />
 
-    <section id="services" className="max-w-5xl mx-auto p-6 my-12 scroll-mt-20 widescreen:section-min-height tallscreen:section-min-height">
-      <h2 className="text-3xl font-bold text-center sm:text-5xl mb-6 text-slate-900dark:text-white">
-        Descripción de sección
-      </h2>
-      <p className="text-2xl mt-4 text-center text-slate-700 dark:text-slate-400">Lorem ipsum dolor sit dunt ut labore et dolo magna aliqua. Duis aute irure dolor in reprehenderit in voluptate</p>
-      <div className="mt-14 grid md:grid-cols-2 lg:grid-cols-3 items-center gap-14">
-        {data.services.map(service => (
-          <Service
-            key={service.id}
-            srcImage={service.img}
-            altImage={service.imgDescription}
-            name={service.name}
-            width={service.width}
-            height={service.height}
-            link={service.link}
+      <section id="testimonials" className="max-w-5xl mx-auto p-6 my-6 sm:my-12 scroll-mt-20 widescreen:section-min-height tallscreen:section-min-height">
+        <h2 className="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white">
+          Testimonios
+        </h2>
+        {data.testimonials.map(testimony => (
+          <Testimony
+            key={testimony.id}
+            content={testimony.content}
+            author={testimony.author}
           />
         ))}
-      </div>
-    </section>
-
-    <hr className="mx-auto bg-black dark:bg-white w-1/2" />
-
-    <section id="testimonials" className="max-w-5xl mx-auto p-6 my-12 scroll-mt-20 widescreen:section-min-height tallscreen:section-min-height">
-      <h2 className="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white">
-        Testimonios
-      </h2>
-      {data.testimonials.map(testimony => (
-        <Testimony
-          key={testimony.id}
-          content={testimony.content}
-          author={testimony.author}
-        />
-      ))}
-    </section>
+      </section>
     </main>
   )
 }
