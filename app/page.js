@@ -129,7 +129,7 @@ export default function Home() {
         Descripción de sección
       </h2>
       <p className="text-2xl mt-4 text-center text-slate-700 dark:text-slate-400">Lorem ipsum dolor sit dunt ut labore et dolo magna aliqua. Duis aute irure dolor in reprehenderit in voluptate</p>
-      <div className="my-14 grid md:grid-cols-2 lg:grid-cols-3 items-center gap-14">
+      <div className="mt-14 grid md:grid-cols-2 lg:grid-cols-3 items-center gap-14">
         {data.services.map(service => (
           <Service
             key={service.id}
