@@ -104,7 +104,7 @@ export default function Home() {
     <main>
       <div className="bg-hero dark:bg-none dark:bg-[#363939]">
         <section id="hero" className="max-w-5xl mx-auto flex flex-col-reverse justify-center sm:flex-row p-6 items-center gap-8 sm:gap-10 mb-12 scroll-mt-40 widescreen:section-min-height tallscreen:section-min-height">
-          <article className="sm:w-1/2">
+          <article className="sm:w-2/3">
             <h2 className="max-w-md text-4xl font-bold text-center sm:text-5xl sm:text-left text-slate-900 dark:text-white">
               Asesoría Latina
             </h2>
@@ -112,11 +112,11 @@ export default function Home() {
               Una descripción que comunique lo que hacemos y cómo los beneficaremos. Necesitamos transmitir confianza y experiencia en lo que hacemos.
             </p>
             <div className="mt-8 flex gap-4">
-              <button className="bg-yc-red px-3 py-4 text-md md:text-xl rounded-lg hover:opacity-90 text-white w-1/2 border border-black shadow-md hover:shadow-xl"><Link href='/asesoria-gratuita'>Asesoría Gratuita</Link></button>
-              <button className="bg-slate-200 dark:bg-slate-50 text-yc-red py-2 px-3 text-md sm:text-xl rounded-lg hover:opacity-80 w-1/2 border border-yc-red shadow-md hover:shadow-xl"><Link href="/">Testimonios</Link></button>
+              <button className="bg-yc-red px-3 py-4 text-md md:text-xl rounded-lg hover:opacity-90 text-white w-full md:w-2/3 sm:w-5/6 border border-black shadow-md hover:shadow-xl"><Link href='/asesoria-gratuita'>Asesoría Gratuita</Link></button>
+              {/* <button className="bg-slate-200 dark:bg-slate-50 text-yc-red py-2 px-3 text-md sm:text-xl rounded-lg hover:opacity-80 w-1/2 border border-yc-red shadow-md hover:shadow-xl"><Link href="/">Testimonios</Link></button> */}
             </div>
           </article>
-          <div className="w-1/2 h-60 sm:h-80 grid place-content-center border-solid border-4 border-black dark:border-white rounded-xl bg-slate-200">
+          <div className="w-1/2 sm:w-1/3 h-60 sm:h-80 grid place-content-center border-solid border-4 border-black dark:border-white rounded-xl bg-slate-200">
             <Image width={150} height={150} src="/image-icon.svg" alt="Pendiente imagen" />
           </div>
         </section>
