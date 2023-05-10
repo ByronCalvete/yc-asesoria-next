@@ -84,7 +84,7 @@ const data = {
     {
       id: 1,
       content: 'Acme has always been there for me. Their Explorer rocket arrived in a wooden crate as expected. Life-long customer! A++ shopping experience.',
-      author: 'Wile E. Coyote, Genius'
+      author: 'Byron Mi mejor amigo'
     },
     {
       id: 2,
