@@ -34,7 +34,7 @@ export default function CertificadoDigital() {
               We&apos;re building rockets for the next century today. From the moon to Mars, Jupiter and beyond<br/><br/>Think Acme Rockets.
             </p>
             <div className="mt-8 text-center sm:text-left">
-              <button className="bg-yc-red px-3 py-4 text-md md:text-xl rounded-lg hover:opacity-90 text-white w-full md:w-2/3 sm:w-5/6 border border-black shadow-md hover:shadow-xl"><Link href='/certificado-digital'>Obtener certificado</Link></button>
+              <button className="bg-yc-red active:bg-[#C53337] px-3 py-4 text-md md:text-xl rounded-lg hover:opacity-90 text-white w-full md:w-2/3 sm:w-5/6 border border-black shadow-md hover:shadow-xl"><Link href='/certificado-digital'>Obtener certificado</Link></button>
             </div>
           </article>
           <div className="w-1/2 sm:w-1/3 h-60 sm:h-80 grid place-content-center border-solid border-4 border-black dark:border-white rounded-xl bg-slate-200">
@@ -73,7 +73,7 @@ export default function CertificadoDigital() {
             <Image width={120} height={120} src="/image-icon.svg" alt="Pendiente imagen"/>
           </div>
         </div>
-        <button className="bg-yc-red px-3 py-4 text-md md:text-xl rounded-lg hover:opacity-90 text-white w-full sm:w-1/3 border border-black shadow-md hover:shadow-xl"><Link href='/certificado-digital'>Obtener certificado</Link></button>
+        <button className="bg-yc-red active:bg-[#C53337] px-3 py-4 text-md md:text-xl rounded-lg hover:opacity-90 text-white w-full sm:w-1/3 border border-black shadow-md hover:shadow-xl"><Link href='/certificado-digital'>Obtener certificado</Link></button>
       </section>
     </main>
   )
