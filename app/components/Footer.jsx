@@ -152,6 +152,10 @@ export default function Footer() {
           <p className="text-right">All Rights Reserved</p>
         </div> */}
       </section>
+      <div className="flex text-center text-xs sm:text-sm font-light justify-center p-3 gap-4 bg-[#920004]">
+          <p>YC Asesoría Latina &copy; <span id="year">2023</span></p>
+          <p>Todos los derechos reservados.</p>
+        </div>
     </footer>
   )
 }
