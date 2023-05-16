@@ -15,11 +15,10 @@ export default function Header() {
   return (
     <header className="bg-slate-100 dark:bg-yc-red text-yc-red dark:text-white sticky top-0 z-10">
       <section className="max-w-5xl mx-auto p-4 flex justify-between items-center">
-        <div className="flex items-center">
+        <Link className="flex items-center" href="/">
           <Image src='/logo-yc.png' alt="logo" width={40} height={40}/>
-          <h1 className="text-3xl font-light">
-            <Link href="/">Asesoría Latina</Link></h1>
-        </div>
+          <h1 className="text-3xl font-light">Asesoría Latina</h1>
+        </Link>
         <div>
           <button onClick={handleClick} id="hamburguer-button" className={hamburguerBtn ? "text-3xl md:hidden cursor-pointer relative w-8 h-8 toggle-btn" : "text-3xl md:hidden cursor-pointer relative w-8 h-8"}>
             <div className="bg-yc-red dark:bg-white w-8 h-1 rounded absolute top-4 -mt-0 5 transition-all duration-500 before:content-[''] before:bg-yc-red dark:before:bg-white before:w-8 before:h-1 before:rounded before:absolute before:-translate-x-4 before:-translate-y-3 before:transition-all before:duration-500 after:content-[''] after:bg-yc-red after:dark:bg-white after:w-8 after:h-1 after:rounded after:absolute after:-translate-x-4 after:translate-y-3 after:transition-all after:duration-500"></div>
@@ -28,7 +27,7 @@ export default function Header() {
             {/* <Link href="/citas" className="hover:opacity-90">Citas</Link>
             <Link href="/residencias" className="hover:opacity-90">Residencias</Link>
             <Link href="/nacionalidad" className="hover:opacity-90">Nacionalidad</Link> */}
-            <Link href="/asesoria-gratuita" className="bg-yc-red dark:bg-slate-50 text-white dark:text-yc-red py-3 px-3 rounded-lg hover:opacity-90 border border-black shadow-md hover:shadow-xl">Asesoría Gratuita</Link>
+            <Link href="/asesoria-gratuita" className="bg-yc-red active:bg-[#C53337] dark:bg-slate-50 text-white dark:text-yc-red py-3 px-3 rounded-lg hover:opacity-90 border border-black shadow-md hover:shadow-xl">Asesoría Gratuita</Link>
           </nav>
         </div>
       </section>
