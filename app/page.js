@@ -111,17 +111,20 @@ const data = {
 export default function Home() {
   return (
     <main>
-      <div className="bg-hero2 bg-center sm:bg-center bg-cover bg-opacity-50 dark:bg-none dark:bg-[#363939]">
+      <div className="bg-hero2 bg-center sm:bg-center bg-cover bg-opacity-50">
         <section id="hero" className="max-w-5xl mx-auto flex flex-col-reverse justify-center sm:flex-row p-6 items-center gap-8 sm:gap-10 mb-12 scroll-mt-40 widescreen:section-min-height tallscreen:section-min-height">
-          <article className="sm:w-5/6 grid place-content-center gap-12">
-            <h2 className="max-w-3xl text-4xl font-bold text-center sm:text-5xl text-yc-red">
+          <article className="sm:w-5/6 grid place-content-center gap-8 sm:gap-12">
+            <div className="mx-auto">
+              <Image width={150} height={150} src="/logo-yc.png" alt="Pendiente descripción"/>
+            </div>
+            <h2 className="max-w-4xl text-4xl font-normal text-center sm:text-7xl text-white">
               YC Asesoría Latina
             </h2>
-            <p className="max-w-3xl text-2xl mt-4 text-center text-slate-700 dark:text-slate-400">
-              Una descripción que comunique lo que hacemos y cómo los beneficaremos. Necesitamos transmitir confianza y experiencia en lo que hacemos.
+            <p className="max-w-3xl text-xl sm:text-3xl font-thin mt-4 rounded-lg text-center text-white dark:text-slate-400">
+              Tu camino hacia una nueva vida, respaldado por expertos legales en extranjería
             </p>
             <div className="mt-8 flex justify-center gap-4">
-              <button className="bg-yc-red active:bg-[#C53337] px-3 py-4 text-md md:text-xl rounded-lg hover:opacity-90 text-white w-full sm:w-1/3 border border-black shadow-md hover:shadow-xl"><Link href='/asesoria-gratuita'>Asesoría Gratuita</Link></button>
+              <button className="bg-slate-100 active:bg-white px-3 py-4 text-md md:text-xl rounded-lg hover:opacity-95 text-yc-red w-full sm:w-1/3 border border-black shadow-md hover:shadow-xl"><Link href='/asesoria-gratuita'>Asesoría Gratuita</Link></button>
             </div>
           </article>
         </section>
@@ -131,9 +134,11 @@ export default function Home() {
 
       <section id="services" className="max-w-5xl mx-auto p-6 my-6 sm:my-12 scroll-mt-20 widescreen:section-min-height tallscreen:section-min-height">
         <h2 className="text-3xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white">
-          Descripción de sección
+          Nuestros servicios
         </h2>
-        <p className="text-2xl mt-4 text-center text-slate-700 dark:text-slate-400">Lorem ipsum dolor sit dunt ut labore et dolo magna aliqua. Duis aute irure dolor in reprehenderit in voluptate</p>
+        <p className="text-2xl mt-4 text-center text-slate-700 dark:text-slate-400">
+          Ofrecemos soluciones legales eficaces y personalizadas para proteger sus derechos y defender sus intereses.
+        </p>
         <div className="mt-14 grid md:grid-cols-2 lg:grid-cols-3 items-center gap-14">
           {data.services.map(service => (
             <Service
