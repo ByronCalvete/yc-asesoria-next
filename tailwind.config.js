@@ -16,7 +16,9 @@ module.exports = {
       },
       backgroundImage: {
         'hero': "url('/pattern.svg')",
-        'hero2': "url('/portada.jpg')"
+        'hero2': "url('/portada.jpg')",
+        'arraigo': "url('/arraigos.jpg')",
+        'citas': "url('/calendar.jpg')",
       },
       keyframes: {
         'open-menu': {
