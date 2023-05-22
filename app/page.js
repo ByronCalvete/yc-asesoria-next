@@ -124,7 +124,9 @@ export default function Home() {
               Tu camino hacia una nueva vida, respaldado por expertos legales en extranjería
             </p>
             <div className="mt-8 flex justify-center gap-4">
-              <button className="bg-slate-100 active:bg-white px-3 py-4 text-md md:text-xl rounded-lg hover:opacity-95 text-yc-red w-full sm:w-1/3 border border-black shadow-md hover:shadow-xl"><Link href='/asesoria-gratuita'>Asesoría Gratuita</Link></button>
+              <Link href="/asesoria-gratuita" className="bg-slate-100 active:bg-white text-center px-3 py-4 text-lg md:text-xl rounded-lg hover:opacity-95 text-yc-red w-full sm:w-1/3 border border-black shadow-md hover:shadow-xl">
+                Asesoría Gratuita
+              </Link>
             </div>
           </article>
         </section>
@@ -132,7 +134,7 @@ export default function Home() {
 
       <hr className="mx-auto bg-black dark:bg-white w-1/2" />
 
-      <section id="services" className="max-w-5xl mx-auto p-6 my-6 sm:my-12 scroll-mt-20 widescreen:section-min-height tallscreen:section-min-height">
+      <section id="services" className="max-w-5xl mx-auto p-6 my-6 scroll-mt-20 widescreen:section-min-height tallscreen:section-min-height">
         <h2 className="text-3xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white">
           Nuestros servicios
         </h2>

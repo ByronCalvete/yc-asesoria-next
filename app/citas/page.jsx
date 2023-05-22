@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Image from 'next/image'
 import Appointment from './components/Appointment'
 import ContactForm from '../components/ContactForm'
 
@@ -38,11 +38,14 @@ export default function Citas() {
 
   return (
     <main>
-      <div className="bg-hero dark:bg-none dark:bg-[#363939]">
+      <div className="bg-citas bg-cover bg-center dark:bg-none dark:bg-[#363939]">
         <section id="hero" className="max-w-5xl mx-auto flex flex-col justify-center px-6 py-14 items-center gap-8 sm:gap-10 scroll-mt-40">
           <h2 className="text-4xl font-bold text-left sm:text-5xl text-slate-900 dark:text-white mb-2 sm:mb-6">
             Te ayudamos con las citas de extranjería
           </h2>
+          <figure className="w-28 h-28 mb-6 bg-yc-red rounded-full border-4 border-yellow-300 grid place-content-center">
+            <Image width={60} height={60} src="/citas.svg" alt="Pendiente descripción" />
+          </figure>
           <ul className="w-full grid grid-cols-1 sm:grid-cols-3 gap-8 px-2 sm:px-12">
             {appointments.map(appointment => (
               <Appointment
