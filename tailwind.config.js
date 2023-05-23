@@ -19,6 +19,7 @@ module.exports = {
         'hero2': "url('/portada.jpg')",
         'arraigo': "url('/arraigos.jpg')",
         'citas': "url('/calendar.jpg')",
+        'residencia': "url('/residencia-espana.jpg')",
       },
       keyframes: {
         'open-menu': {

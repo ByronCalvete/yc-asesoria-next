@@ -74,7 +74,7 @@ export default function Arraigos() {
 
       <section className="max-w-5xl my-6 grid mx-auto p-6">
         <h2 className="text-3xl font-bold text-center sm:text-5xl mb-6 text-slate-900">Tipos de Arraigo</h2>
-        <p className="text-xl mt-4 text-center text-slate-700">
+        <p className="text-xl mt-4 text-center font-light text-slate-700">
           En España, existen diferentes tipos de arraigos, que son mecanismos legales que permiten a una persona obtener una autorización de residencia en el país, incluso en situaciones en las que no cumple todos los requisitos tradicionales para obtenerla.
         </p>
         <div className="mt-14 grid sm:grid-cols-2 gap-10 text-center">

@@ -76,7 +76,7 @@ const data = {
       link: '/nacionalidad'
     },
     {
-      id: 6,
+      id: 9,
       name: 'Estancias Legales',
       link: '/estancias-legales'
     },
