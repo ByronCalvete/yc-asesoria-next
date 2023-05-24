@@ -2,10 +2,10 @@ export default function ContactForm ({ title = 'Contáctanos'}) {
   return (
     <section
       id="contact"
-      class="p-6 my-8 scroll-mt-16 widescreen:section-min-height tallscreen:section-min-height"
+      class="p-6 my-6 scroll-mt-16 widescreen:section-min-height tallscreen:section-min-height"
     >
       <h2
-        class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white"
+        class="text-4xl font-bold text-center sm:text-5xl mb-8 text-slate-900 dark:text-white"
       >
         {title}
       </h2>
