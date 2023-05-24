@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import Link from 'next/link'
+import ContactForm from '../components/ContactForm'
 
 const data = {
   arraigos: [
@@ -100,6 +100,10 @@ export default function Arraigos() {
           ))}
         </ul>
       </section>
+
+      <hr className="mx-auto bg-black dark:bg-white w-1/2" />
+
+      <ContactForm />
     </main>
   )
 }
