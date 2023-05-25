@@ -36,16 +36,16 @@ const data = {
   comments: [
     {
       id: 1,
-      content: 'El proceso de solicitud de la residencia por reagrupación familiar se realiza ante la Oficina de Extranjería correspondiente al lugar de residencia en España. Es importante seguir los procedimientos establecidos y presentar toda la documentación requerida para completar el trámite.',
+      content: 'El proceso de solicitud de residencia como autónomo se realiza ante la Oficina de Extranjería correspondiente y requiere la presentación de una serie de documentos, como el plan de negocio, comprobante de inversión económica, certificados de antecedentes penales, pasaporte válido, entre otros.',
     },
     {
       id: 2,
-      content: 'Una vez obtenida la autorización de residencia por reagrupación familiar, los familiares podrán vivir y trabajar legalmente en España durante el periodo establecido en el permiso, siempre y cuando cumplan con las condiciones establecidas por la ley de extranjería.',
+      content: 'Una vez obtenida la autorización de residencia como autónomo, el titular tiene derecho a vivir y trabajar en España como trabajador independiente durante el período establecido en el permiso, siempre y cuando cumpla con las obligaciones legales y fiscales correspondientes a su actividad empresarial.',
     }
   ],
 }
 
-export default function ReagrupacionFamilia () {
+export default function ResidenciaPorCuentaPropia () {
   return (
     <>
       <section className="max-w-5xl my-6 grid mx-auto p-6 gap-4 sm:gap-6">

@@ -49,7 +49,7 @@ const data = {
   ],
 }
 
-export default function ReagrupacionFamilia () {
+export default function ReagrupacionFamiliar () {
   return (
     <>
       <section className="max-w-5xl my-6 grid mx-auto p-6 gap-4 sm:gap-6">
