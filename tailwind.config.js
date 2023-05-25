@@ -20,6 +20,7 @@ module.exports = {
         'arraigo': "url('/arraigos.jpg')",
         'citas': "url('/calendar.jpg')",
         'residencia': "url('/residencia-espana.jpg')",
+        'estancias': "url('/estancias-legales.jpg')",
       },
       keyframes: {
         'open-menu': {
