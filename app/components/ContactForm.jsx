@@ -18,8 +18,8 @@ export default function ContactForm ({ title = 'Contáctanos'}) {
           id="subject"
           name="subject"
           required
-          minlength="3"
-          maxlength="60"
+          minLength="3"
+          maxLength="60"
           placeholder="Nombre"
           className="w-full focus:outline-yc-red text-black text-sm sm:text-lg p-3 rounded-sm border border-solid border-slate-400 dark:border-none"
         />
@@ -28,8 +28,8 @@ export default function ContactForm ({ title = 'Contáctanos'}) {
           id="subject"
           name="subject"
           required
-          minlength="3"
-          maxlength="60"
+          minLength="3"
+          maxLength="60"
           placeholder="E-mail"
           className="w-full focus:outline-yc-red text-black text-sm sm:text-lg p-3 rounded-sm border border-solid border-slate-400 dark:border-none"
         />
@@ -38,8 +38,8 @@ export default function ContactForm ({ title = 'Contáctanos'}) {
           id="subject"
           name="subject"
           required
-          minlength="3"
-          maxlength="60"
+          minLength="3"
+          maxLength="60"
           placeholder="Teléfono"
           className="w-full focus:outline-yc-red text-black text-sm sm:text-lg p-3 rounded-sm border border-solid border-slate-400 dark:border-none"
         />
