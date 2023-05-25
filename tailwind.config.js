@@ -21,6 +21,7 @@ module.exports = {
         'citas': "url('/calendar.jpg')",
         'residencia': "url('/residencia-espana.jpg')",
         'estancias': "url('/estancias-legales.jpg')",
+        'renovaciones': "url('/renovaciones.jpg')",
       },
       keyframes: {
         'open-menu': {
