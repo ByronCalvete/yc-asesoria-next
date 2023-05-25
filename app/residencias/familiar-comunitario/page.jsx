@@ -1,7 +1,20 @@
 import ContactForm from "@/app/components/ContactForm"
 
 const data = {
-  description: 'Algunos de los requisitos comunes para solicitar la residencia por familiar comunitario son los siguientes:',
+  description: [
+    {
+      id: 1,
+      content: 'La residencia por familiar comunitario, también conocida como tarjeta de residencia de familiar de ciudadano de la Unión Europea, es un permiso de residencia que permite a los familiares de ciudadanos de la Unión Europea (UE) o del Espacio Económico Europeo (EEE) vivir y trabajar legalmente en España.',
+    },
+    {
+      id: 2,
+      content: 'Este tipo de residencia se aplica a los familiares directos de ciudadanos comunitarios, como cónyuges, parejas registradas, hijos menores de 21 años o mayores a cargo, padres o abuelos a cargo, entre otros, siempre que cumplan con ciertos requisitos establecidos por la legislación española y europea.',
+    },
+    {
+      id: 1,
+      content: 'Algunos de los requisitos comunes para solicitar la residencia por familiar comunitario son los siguientes:',
+    },
+  ],
   requirements: [
     {
       id: 1,
@@ -40,8 +53,10 @@ export default function FamiliarComunitario () {
   return (
     <>
       <section className="max-w-5xl my-6 grid mx-auto p-6 gap-4 sm:gap-6">
-        <h2 className="text-3xl font-bold text-center sm:text-5xl mb-2 sm:mb-6 text-yc-red">Residencia por familiar comunitario</h2>
-        <p className="font-normal text-xl sm:text-2xl text-justify mb-2 sm:mb-6">{data.description}</p>
+        <h2 className="text-4xl font-bold text-center sm:text-5xl mb-2 sm:mb-6 text-yc-red">Residencia por familiar comunitario</h2>
+        {data.description.map(t => (
+          <p key={t.id} className="font-normal text-xl sm:text-2xl text-justify">{t.content}</p>
+        ))}
         {data.requirements.map(t => (
           <div key={t.id} className="flex items-start">
             <span className="font-light px-4 text-xl">✔️</span>
@@ -51,7 +66,7 @@ export default function FamiliarComunitario () {
       </section>
       <section className="max-w-5xl my-6 grid mx-auto p-6 gap-4 sm:gap-6">
         {data.comments.map(t => (
-          <p key={t.id} className="font-normal text-xl sm:text-2xl text-justify mb-2 sm:mb-6">{t.content}</p>
+          <p key={t.id} className="font-normal text-xl sm:text-2xl text-justify">{t.content}</p>
         ))}
       </section>
 
