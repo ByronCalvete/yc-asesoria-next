@@ -55,7 +55,7 @@ export default function FamiliarComunitario () {
       <section className="max-w-5xl my-6 grid mx-auto p-6 gap-4 sm:gap-6">
         <h2 className="text-4xl font-bold text-center sm:text-5xl mb-2 sm:mb-6 text-yc-red">Residencia por familiar comunitario</h2>
         {data.description.map(t => (
-          <p key={t.id} className="font-normal text-xl sm:text-2xl text-justify">{t.content}</p>
+          <p key={t.id} className="font-light text-xl sm:text-2xl text-justify">{t.content}</p>
         ))}
         {data.requirements.map(t => (
           <div key={t.id} className="flex items-start">
@@ -66,7 +66,7 @@ export default function FamiliarComunitario () {
       </section>
       <section className="max-w-5xl my-6 grid mx-auto p-6 gap-4 sm:gap-6">
         {data.comments.map(t => (
-          <p key={t.id} className="font-normal text-xl sm:text-2xl text-justify">{t.content}</p>
+          <p key={t.id} className="font-light text-xl sm:text-2xl text-justify">{t.content}</p>
         ))}
       </section>
 
