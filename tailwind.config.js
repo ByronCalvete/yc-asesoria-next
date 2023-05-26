@@ -18,7 +18,7 @@ module.exports = {
         'hero': "url('/pattern.svg')",
         'hero2': "url('/portada.jpg')",
         'arraigo': "url('/arraigos.jpg')",
-        'citas': "url('/calendar.jpg')",
+        'citas': "url('/citas.jpg')",
         'residencia': "url('/residencia-espana.jpg')",
         'estancias': "url('/estancias-legales.jpg')",
         'renovaciones': "url('/renovaciones.jpg')",
