@@ -1,10 +1,10 @@
 import Image from 'next/image'
 import Link from 'next/link'
-
+import ContactForm from '../components/ContactForm'
 import Step from './components/Step'
 
-export default function CertificadoDigital() {
-  const data = [
+const data = {
+  steps: [
     {
       id: 1,
       name: "Step 1",
@@ -20,37 +20,67 @@ export default function CertificadoDigital() {
       name: "Step 3",
       content: "We're building rockets for the next century today"
     },
-  ]
+  ],
+  requirements: [
+    {
+      id: 1,
+      title: 'Formatos',
+      description: 'Siempre los documentos se deben enviar en formato PDF',
+    },
+    {
+      id: 2,
+      title: 'Documentos en vigor',
+      description: '',
+    },
+    {
+      id: 4,
+      title: 'Ejemplos de documentos válidos',
+      description: '',
+    },
+  ],
+  documentsImages: [
+    {
+      id: 1,
+      name: 'Hoja blanca de asilo',
+      img: '/documento-hoja-blanca.jpg',
+    },
+    {
+      id: 2,
+      name: 'Tarjeta de Identidad de Extranjero (TIE)',
+      img: '/documento-nie.jpg',
+    },
+    {
+      id: 3,
+      name: 'Asignación de NIE',
+      img: '/documento-nie2.jpg',
+    },
+  ],
+}
 
+export default function CertificadoDigital() {
   return (
     <main>
-      <div className="bg-hero dark:bg-none dark:bg-[#363939]">
-        <section id="hero" className="max-w-5xl mx-auto flex flex-col-reverse justify-center sm:flex-row p-6 items-center gap-8 sm:gap-10 mb-12 scroll-mt-40 widescreen:section-min-height tallscreen:section-min-height">
-          <article className="sm:w-2/3">
-            <h2 className="max-w-md text-4xl font-bold text-left sm:text-5xl text-slate-900 dark:text-white">
-              We Boldy Go <span className="text-yc-red dark:opacity-80">Where No Rocket</span> Has Gone Before...
+      <section className="bg-certificado bg-center bg-cover py-6 sm:py-16 mb-6 sm:mb-12">
+        <section id="hero" className="max-w-6xl mx-auto flex flex-col-reverse justify-center sm:flex-row p-6 items-center gap-8 sm:gap-10 scroll-mt-40">
+          <article className="max-w-xl flex flex-col items-center gap-14">
+            <h2 className="text-4xl font-semibold text-center sm:text-6xl text-yc-red dark:text-white">
+              Certificado digital
             </h2>
-            <p className="max-w-md text-2xl mt-4 text-left text-slate-700 dark:text-slate-400">
-              We&apos;re building rockets for the next century today. From the moon to Mars, Jupiter and beyond<br/><br/>Think Acme Rockets.
-            </p>
-            <div className="mt-8 text-center sm:text-left">
-              <button className="bg-yc-red active:bg-[#C53337] px-3 py-4 text-md md:text-xl rounded-lg hover:opacity-90 text-white w-full md:w-2/3 sm:w-5/6 border border-black shadow-md hover:shadow-xl"><Link href='/certificado-digital'>Obtener certificado</Link></button>
-            </div>
+            <p className="text-xl sm:text-2xl font-light text-center text-slate-800">Potencia tu Acceso Digital: Obtén tu Certificado Digital y Simplifica tus Trámites en Línea</p>
+            <figure className="w-28 h-28 mb-6 bg-yc-red rounded-full border-4 border-yellow-300 grid place-content-center">
+              <Image width={60} height={60} src="/certificado-digital.svg" alt="Pendiente descripción" />
+            </figure>
           </article>
-          <div className="w-1/2 sm:w-1/3 h-60 sm:h-80 grid place-content-center border-solid border-4 border-black dark:border-white rounded-xl bg-slate-200">
-            <Image width={150} height={150} src="/image-icon.svg" alt="Pendiente imagen" />
-          </div>
         </section>
-      </div>
+      </section>
 
       <hr className="mx-auto bg-black dark:bg-white w-1/2" />
 
-      <section className="max-w-5xl mx-auto p-6 mt-6 sm:mt-12 scroll-mt-20">
-        <h2 className="text-3xl font-bold text-center sm:text-4xl mb-6 text-slate-900 dark:text-white">
-          ¿Cómo solicitar tu certificado con nosotros?
-        </h2>
+      <section className="max-w-5xl my-6 grid mx-auto p-6">
+        <h2 className="text-3xl font-bold text-center sm:text-5xl mb-6 text-slate-900">¿Cómo solicitar tu certificado con nosotros?</h2>
+        <p className="text-xl mt-4 text-center font-light text-slate-700">Puedes solicitarlo de manera <span className="underline underline-offset-8 decoration-yc-red">presencial</span> o <span className="underline underline-offset-8 decoration-yc-red">telemática</span></p>
         <ul className="flex flex-col sm:flex-row items-center gap-8 my-12">
-          {data.map(step => (
+          {data.steps.map(step => (
             <Step
               key={step.id}
               step={step.id}
@@ -59,21 +89,31 @@ export default function CertificadoDigital() {
             />
           ))}
         </ul>
+        <div className="flex justify-center">
+          <Link href="/certificado-digital" className="bg-yc-red text-center px-3 py-4 text-lg md:text-xl rounded-lg hover:opacity-95 text-white w-5/6 sm:w-1/3 border border-yellow-300 shadow-lg shadow-slate-900/20 hover:scale-105 active:bg-red-600">Obtener certificado</Link>
+        </div>
       </section>
 
       <hr className="mx-auto bg-black dark:bg-white w-1/2" />
 
-      <section className="flex flex-col items-center max-w-5xl mx-auto p-6 sm:my-12 my-6 scroll-mt-20">
-        <h2 className="text-3xl font-bold sm:text-4xl mb-6 text-slate-900 dark:text-white">
-          ¿Porqué el certificado digital con nosotros?
-        </h2>
-        <div className="flex flex-col-reverse sm:flex-row items-center justify-center p-6 my-6 gap-8">
-          <p className="w-full sm:w-1/2 font-light text-center sm:text-left">We&apos;re building rockets for the next century today. <span className="font-bold">From the moon to Mars,</span> Jupiter and beyond.<br/>The Acme Adventurer Rocket has thwarted my Illudium Q-36 Explisve Space Modulator on several occassions. This makes me very, very angry! Nevertheless, K-9 and I have awarded Acme the Martian contract for space exploration rockets based on Acme&apos;s queality and sturdy designs.<br/>We&apos;re building rockets for the next century today. From the moon to Mars, Jupiter and beyond. </p>
-          <div className="w-5/6 sm:w-1/2 h-60 sm:h-80 grid place-content-center border-solid border-4 border-black dark:border-white rounded-xl bg-slate-200">
-            <Image width={120} height={120} src="/image-icon.svg" alt="Pendiente imagen"/>
-          </div>
+      <section className="max-w-5xl mt-6 grid mx-auto p-6">
+        <h2 className="text-3xl font-bold text-center sm:text-5xl mb-6 text-slate-900">Requisitos a tener en cuenta</h2>
+        <ul className="py-6">
+          {data.requirements.map(t => (
+            <li key={t.id}>
+              <h3 className="font-normal text-2xl text-yc-red">✔️ {t.title}</h3>
+              <p className="font-light p-4 text-xl">{t.description}</p>
+            </li>
+          ))}
+        </ul>
+        <div className="grid grid-cols-2 sm:flex sm:items-center sm:justify-between gap-2">
+          {data.documentsImages.map(t => (
+            <div key={t.id} className="flex flex-col items-center">
+              <Image width={200} height={200} src={t.img} alt="Pendiente descripcion" />
+              <p className="font-light p-4 text-md sm:text-xl text-center">{t.name}</p>
+            </div>
+          ))}
         </div>
-        <button className="bg-yc-red active:bg-[#C53337] px-3 py-4 text-md md:text-xl rounded-lg hover:opacity-90 text-white w-full sm:w-1/3 border border-black shadow-md hover:shadow-xl"><Link href='/certificado-digital'>Obtener certificado</Link></button>
       </section>
     </main>
   )

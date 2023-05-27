@@ -22,6 +22,7 @@ module.exports = {
         'residencia': "url('/residencia-espana.jpg')",
         'estancias': "url('/estancias-legales.jpg')",
         'renovaciones': "url('/renovaciones.jpg')",
+        'certificado': "url('/certificado-digital.jpg')"
       },
       keyframes: {
         'open-menu': {
