@@ -98,7 +98,7 @@ export default function CertificadoDigital() {
 
       <section className="max-w-5xl mt-6 grid mx-auto p-6">
         <h2 className="text-3xl font-bold text-center sm:text-5xl mb-6 text-slate-900">Requisitos a tener en cuenta</h2>
-        <ul className="py-6">
+        <ul className="py-6 px-4">
           {data.requirements.map(t => (
             <li key={t.id}>
               <h3 className="font-normal text-2xl text-yc-red">✔️ {t.title}</h3>
